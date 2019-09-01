@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+     
+
+     <input id="demo1" type="text" name="alert" />
+    <input id="demo2" type="text" name="alert" />
+    <button id="demo">Add</button>
+    <button id="demo4">subtract</button>
+    <button id="demo5">multiply</button>
+    <button id="demo6">divide</button>
+     <div id="demo3"></div>
+<script>
+        document.querySelector('#demo').onclick=function(){
+            var x = document.querySelector('#demo1').value;
+            var y = document.querySelector("#demo2").value;
+
+            document.querySelector("#demo3").innerHTML=x+y;
+            document.querySelector("#demo4").innerHTML=x-y;
+            document.querySelector("#demo5").innerHTML=x*y;
+            document.querySelector("#demo6").innerHTML=x/y;
+        }
+    </script>
+
+    </body>
+    </html>
